@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+  background-image: linear-gradient(-21deg, #6959b1, #dacde5);
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cabin;
+  margin: 0;
+  height: 100%;
+  padding: 0 40px;
+  overflow: hidden;
+
+}
+
+#current-time {
+  font-family: Lato;
+  float: right;
+  width: 300px;
+  font-weight: 700;
+}
+
+#header {
+  font-size: 60px;
+  margin: 15px 40px;
+  color: #303030;
+}
+
+#header-logo {
+  height: 58px;
+  vertical-align: -5px;
+}
+
+.dashboard {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 17px;
+  padding: 20px 40px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.event, .day-section {
+  margin-top: 60px;
+}
+
+.event:first-child, .day-section:first-child {
+  margin-top: 0;
+}
+
+.event-title {
+  font-size: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.event-details {
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.5);
+
+}
+
+.time {
+  font-family: Lato;
+  font-weight: 700;
+}
+
+.event span {
+  display: inline-block;
+}
+
+.day-label {
+  display: inline-block;
+  font-size: 40px;
+  width: 300px;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-right: 50px;
+  text-align: right;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Lato;
+}
+.day-events {
+  display: inline-block;
+}
+
+.duration {
+  font-size: 60%;
+  margin: 0 30px;
+}
+
+.badge {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  display: inline-block;
+  vertical-align: 8px;
+}
+
+.tags {
+  margin-left: 20px;
+}
+
+.tag {
+  font-size: 60%;
+  margin: 0 6px;
+  text-transform: uppercase;
+}
