@@ -1,6 +1,9 @@
 var ReactDom = require('react-dom');
 var React = require('react');
 
+// Polyfill for `fetch`
+require('whatwg-fetch');
+
 var API_URL = 'https://notman.herokuapp.com';
 
 function getJSON(path) {
