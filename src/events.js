@@ -1,15 +1,11 @@
 var ReactDom = require('react-dom');
 var React = require('react');
-var reqwest = require('reqwest');
 
 var API_URL = 'https://notman.herokuapp.com';
 
-function getJSON(path, callback) {
-  return reqwest({
-    url: API_URL + path,
-    method: 'get',
-    type: 'json'
-  });
+function getJSON(path) {
+  return fetch(API_URL + path)
+    .then(response => response.json());
 }
 
 window.init = function init() {
