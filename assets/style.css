@@ -48,6 +48,10 @@ body {
 }
 
 .event-title {
+  /* This max-width prevents the event title from breaking the line. */
+  max-width: 1025px;
+  overflow: hidden;
+
   font-size: 60px;
   overflow: hidden;
   white-space: nowrap;
